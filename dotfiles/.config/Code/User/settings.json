@@ -1,0 +1,24 @@
+{
+    "editor.wordWrap": "on",
+    "window.zoomLevel": 1,
+    "editor.fontSize": 13,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "git.ignoreLegacyWarning": true,
+    "git.autofetch": true,
+    "redhat.telemetry.enabled": false,
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Visual Studio Dark - C++",
+    "terminal.integrated.cursorBlinking": true,
+      "explorer.confirmDelete": false,
+      "cmake.configureOnOpen": false,
+      "cSpell.userWords": [
+        "conct",
+        "hcrs",
+        "perc",
+        "scrs"
+      ],
+      "C_Cpp.updateChannel": "Insiders",
+      "explorer.confirmDragAndDrop": false,
+      "markdown.preview.breaks": true,
+}
