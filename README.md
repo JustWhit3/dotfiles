@@ -24,5 +24,4 @@ dotfiles/
 │   ├── .clang-format
 │── README.md
 │── LICENSE
-│── .gitattributes
 ```
