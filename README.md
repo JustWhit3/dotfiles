@@ -21,6 +21,7 @@ dotfiles/
 │   ├── bashrc_files/
 │   │   ├── git-prompt.sh
 │   ├── .bashrc
+│   ├── .clang-format
 │── README.md
 │── LICENSE
 │── .gitattributes
