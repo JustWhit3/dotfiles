@@ -33,6 +33,7 @@ dotfiles/
 │   │   ├── git-prompt.sh
 │   ├── .bashrc
 │   ├── .clang-format
+├── img/
 │── README.md
 │── LICENSE
 ```
