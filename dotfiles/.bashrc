@@ -117,9 +117,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#ROOT settings
-source /home/gianluca/root-build/bin/thisroot.sh
-
 #Language settings
 LANG="en_US.UTF-8"
 LANGUAGE="en_US:en"
@@ -160,3 +157,6 @@ function condor_check_schedulers () {
     done
 }
 export -f condor_check_schedulers
+
+#Cargo settings
+export PATH=$PATH:/home/gianluca/.cargo/bin
