@@ -292,5 +292,7 @@
         "yaml": false,
         "plaintext": true,
         "markdown": false
-      }
+      },
+      "workbench.startupEditor": "none",
+      "C_Cpp.suggestSnippets": false
 }

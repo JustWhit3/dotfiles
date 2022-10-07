@@ -1,0 +1,110 @@
+#====================================================
+#     Preprocessor
+#====================================================
+
+snippet inc "include with angular brackets" b
+#include <$1>
+$0
+endsnippet
+
+snippet incq "include with quotation marks" b
+#include "$1"
+$0
+endsnippet
+
+snippet prag "pragma once" b
+#pragma once$1
+endsnippet
+
+snippet head "header include directives" b
+#ifndef $1
+#define $1
+
+$0
+
+#endif
+endsnippet
+
+snippet ifdef "ifdef" b
+#ifdef $1
+$0
+#endif
+endsnippet
+
+snippet ifndef "ifndef" b
+#ifndef $1
+$0
+#endif
+endsnippet
+
+#====================================================
+#     Function
+#====================================================
+
+snippet main "main" b
+int main( int argc, char* argv[] )
+ {
+  $1
+ }
+endsnippet
+
+#====================================================
+#     Class and struct
+#====================================================
+
+snippet cla "class" b
+class $1
+ {
+  $0
+ };
+endsnippet
+
+snippet stru "struct" b
+struct $1
+ {
+  $0
+ };
+endsnippet
+
+#====================================================
+#     Namespace
+#====================================================
+
+snippet nam "namespace" b
+namespace $1
+ {
+  $0
+ }
+endsnippet
+
+snippet nama "anonymous namespace" b
+namespace
+ {
+  $1
+ }
+endsnippet
+
+snippet usnam "using namespace" b
+using namespace $1;$0
+endsnippet
+
+#====================================================
+#     Enum
+#====================================================
+
+snippet enumcl "enum class" b
+enum class $1 { $0 };
+endsnippet
+
+#====================================================
+#     Altro
+#====================================================
+
+snippet smallprog "small program" b
+#include <iostream>
+
+int main( int argc, char* argv[] )
+ {
+  $1
+ }
+endsnippet
