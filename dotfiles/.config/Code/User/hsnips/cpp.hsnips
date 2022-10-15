@@ -2,12 +2,12 @@
 #     Preprocessor
 #====================================================
 
-snippet inc "include with angular brackets" b
+snippet incl "include with angular brackets" b
 #include <$1>
 $0
 endsnippet
 
-snippet incq "include with quotation marks" b
+snippet inclq "include with quotation marks" b
 #include "$1"
 $0
 endsnippet
