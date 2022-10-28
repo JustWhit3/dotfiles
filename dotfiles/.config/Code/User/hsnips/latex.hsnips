@@ -1,0 +1,9 @@
+#====================================================
+#     Preprocessor
+#====================================================
+
+snippet item "begin and end itemize" b
+\begin{itemize}
+    \item $1
+\end{itemize}
+endsnippet
