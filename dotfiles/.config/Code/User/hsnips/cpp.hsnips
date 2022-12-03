@@ -3,13 +3,11 @@
 #====================================================
 
 snippet incl "include with angular brackets" b
-#include <$1>
-$0
+#include <$1>$0
 endsnippet
 
 snippet inclq "include with quotation marks" b
-#include "$1"
-$0
+#include "$1"$0
 endsnippet
 
 snippet prag "pragma once" b
