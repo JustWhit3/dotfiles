@@ -19,3 +19,20 @@ function condor_check_schedulers () {
     done
 }
 export -f condor_check_schedulers
+
+#============================================
+#     Virtualenv
+#============================================
+
+# virtualenv_info
+function virtualenv_info(){
+    # Get Virtual Env
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        # Strip out the path and just leave the env name
+        venv="${VIRTUAL_ENV##*/}"
+        [[ -n "$venv" ]] && echo "($venv) "
+    else
+        # In case you don't have one activated
+        venv=""
+    fi
+}

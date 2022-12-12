@@ -41,7 +41,7 @@ fi
 
 # Style of the command prompt
 if [ "$color_prompt" = yes ]; then
-    PS1='┌──(\[\033[36m\]$?\[\033[37m\]) [`date +'%H:%M'`] ${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]-[\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1 " (%s)")\n└─\$ '
+    PS1='(\[\033[36m\]$?\[\033[37m\]) [`date +'%H:%M'`] ${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]-[\[\033[01;34m\]\w\[\033[00m\]]$(__git_ps1 " (%s)")\n└─\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -96,8 +96,7 @@ fi
 LANG="en_US.UTF-8"
 LANGUAGE="en_US:en"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
+# Conda env settings
 __conda_setup="$('/home/gianluca/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
@@ -109,7 +108,6 @@ else
     fi
 fi
 unset __conda_setup
-# <<< conda initialize <<<
 
 # Python libraries path
 export PYTHONPATH=/home/gianluca/anaconda3
@@ -119,3 +117,8 @@ source $HOME/git-prompt.sh
 
 # Cargo settings
 export PATH=$PATH:/home/gianluca/.cargo/bin
+
+# Virtualenv settings to correct env position on the shell
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+VENV="\$(virtualenv_info)";
+PS1="┌──${VENV}${PS1}"
