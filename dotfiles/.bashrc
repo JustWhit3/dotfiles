@@ -109,6 +109,17 @@ else
 fi
 unset __conda_setup
 
+# Virtualenv settings to correct env position on the shell
+PS1_START="┌──"
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+VENV="\$(virtualenv_info)";
+PS1="${VENV}${PS1}"
+
+# Conda env settings to correct env position on the shell
+CENV="\$(condaenv_info)";
+PS1="${CENV}${PS1}"
+PS1="${PS1_START}${PS1}"
+
 # Python libraries path
 export PYTHONPATH=/home/gianluca/anaconda3
 
@@ -117,8 +128,3 @@ source $HOME/git-prompt.sh
 
 # Cargo settings
 export PATH=$PATH:/home/gianluca/.cargo/bin
-
-# Virtualenv settings to correct env position on the shell
-export VIRTUAL_ENV_DISABLE_PROMPT=1
-VENV="\$(virtualenv_info)";
-PS1="┌──${VENV}${PS1}"
