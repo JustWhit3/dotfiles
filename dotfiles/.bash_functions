@@ -25,19 +25,14 @@ export -f condor_check_schedulers
 #============================================
 
 # virtualenv_info
-function virtualenv_info(){
-    if [[ -n "$VIRTUAL_ENV" ]]; then
-        venv="${VIRTUAL_ENV##*/}"
-        [[ -n "$venv" ]] && echo "($venv) "
-    else
-        venv=""
+function env_info(){
+    if [ "$1" == "virtualenv" ]; then
+        env=${VIRTUAL_ENV}
+    elif [ "$1" == "condaenv" ]; then
+        env=${CONDA_DEFAULT_ENV}
     fi
-}
-
-# condaenv_info
-function condaenv_info(){
-    if [[ -n "$CONDA_DEFAULT_ENV" ]]; then
-        venv="${CONDA_DEFAULT_ENV##*/}"
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        venv="${env##*/}"
         [[ -n "$venv" ]] && echo "($venv) "
     else
         venv=""

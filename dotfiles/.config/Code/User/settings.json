@@ -200,6 +200,7 @@
         "perceptron",
         "Popen",
         "posix",
+        "pprint",
         "pqueue",
         "printbuf",
         "profilepic",
