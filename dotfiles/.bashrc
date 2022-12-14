@@ -111,7 +111,7 @@ unset __conda_setup
 
 # Virtualenv settings to correct env position on the shell
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-PS1='┌──(\[\033[36m\]$?\[\033[37m\]) $(env_info virtualenv)$(env_info condaenv)'$PS1
+PS1='┌──(\[\033[36m\]$?\[\033[37m\]) $(virtualenv_info)$(condaenv_info)'$PS1
 
 # Python libraries path
 export PYTHONPATH=/home/gianluca/anaconda3
