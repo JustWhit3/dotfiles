@@ -12,4 +12,9 @@ alias cclean="rm -rf build"
 #============================================
 #     Docker
 #============================================
-alias dcompose="docker-compose run --rm"
+alias dcompose="sudo docker-compose run --rm"
+
+#============================================
+#     apt
+#============================================
+alias ainstall="sudo apt install"
