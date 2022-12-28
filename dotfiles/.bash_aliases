@@ -8,6 +8,7 @@ alias cbuild="cmake --build build"
 alias cinstall="sudo cmake --build build --target install"
 alias ctarget="cmake --build build --target"
 alias cclean="rm -rf build"
+alias cdebug="cmake -B build -DCMAKE_BUILD_TYPE=Debug"
 
 #============================================
 #     Docker

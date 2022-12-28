@@ -77,6 +77,7 @@
         "eigen",
         "elasticnet",
         "elif",
+        "EMCAL",
         "emittance",
         "emojize",
         "endcaps",
@@ -100,6 +101,7 @@
         "gmpy",
         "gnubin",
         "gunc",
+        "HADCAL",
         "hcrs",
         "Helgrind",
         "hexafluoride",
@@ -176,6 +178,7 @@
         "myscripts",
         "ndenumerate",
         "nditer",
+        "neighbour",
         "nidified",
         "Nikola",
         "npar",
@@ -201,6 +204,7 @@
         "paral",
         "parallize",
         "pcre",
+        "pdfs",
         "penality",
         "perc",
         "perceptron",
@@ -236,6 +240,7 @@
         "scrs",
         "seaborn",
         "selectimage",
+        "SFML",
         "sharex",
         "sharey",
         "sklearn",
@@ -435,5 +440,8 @@
           "env": {}
         }
       ],
-      "githubPullRequests.pullBranch": "never"
+      "githubPullRequests.pullBranch": "never",
+      "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+      }
 }
