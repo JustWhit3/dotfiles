@@ -121,3 +121,6 @@ source $HOME/git-prompt.sh
 
 # Cargo settings
 export PATH=$PATH:/home/gianluca/.cargo/bin
+
+# Added Qt path for CMake
+export CMAKE_PREFIX_PATH=/usr/local/Qt-6.4.2
