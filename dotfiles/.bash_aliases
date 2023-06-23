@@ -19,3 +19,10 @@ alias dcompose="sudo docker-compose run --rm"
 #     apt
 #============================================
 alias ainstall="sudo apt install"
+
+#============================================
+#     System
+#============================================
+alias system_space="sudo du -h --max-depth=1 /"
+alias current_space="du -sh *"
+alias system_clean="bleachbit"

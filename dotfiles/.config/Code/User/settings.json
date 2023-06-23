@@ -1,6 +1,5 @@
 {
     "editor.wordWrap": "on",
-    "window.zoomLevel": 1,
     "editor.fontSize": 13,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -464,4 +463,5 @@
       },
       "git.openRepositoryInParentFolders": "never",
       "workbench.colorTheme": "Default Dark+",
+      "window.zoomLevel": 1,
 }
