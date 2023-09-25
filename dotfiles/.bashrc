@@ -122,8 +122,9 @@ source $HOME/git-prompt.sh
 # Cargo settings
 export PATH=$PATH:/home/gianluca/.cargo/bin
 
-# Added Qt path for CMake
+# Add Qt paths
 export CMAKE_PREFIX_PATH=/usr/local/Qt-6.4.2
+export LD_LIBRARY_PATH=/usr/local/Qt-6.4.2/lib:$LD_LIBRARY_PATH
 
 # ROOT path
 source /home/gianluca/root_v6.28.04.Linux-ubuntu22-x86_64-gcc11.3/bin/thisroot.sh

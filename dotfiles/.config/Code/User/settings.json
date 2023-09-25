@@ -136,6 +136,7 @@
         "Kaggle",
         "keras",
         "kfold",
+        "labelpad",
         "Laguerre",
         "larsenalgear",
         "lbfgs",
@@ -464,4 +465,5 @@
       "git.openRepositoryInParentFolders": "never",
       "workbench.colorTheme": "Default Dark+",
       "window.zoomLevel": 1,
+      "diffEditor.ignoreTrimWhitespace": false,
 }
