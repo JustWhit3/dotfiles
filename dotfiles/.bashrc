@@ -96,7 +96,8 @@ fi
 LANG="en_US.UTF-8"
 LANGUAGE="en_US:en"
 
-# Conda env settings
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/gianluca/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
@@ -108,6 +109,7 @@ else
     fi
 fi
 unset __conda_setup
+# <<< conda initialize <<<
 
 # Virtualenv settings to correct env position on the shell
 export VIRTUAL_ENV_DISABLE_PROMPT=1
@@ -127,4 +129,9 @@ export CMAKE_PREFIX_PATH=/usr/local/Qt-6.4.2
 export LD_LIBRARY_PATH=/usr/local/Qt-6.4.2/lib:$LD_LIBRARY_PATH
 
 # ROOT path
-source /home/gianluca/root_v6.28.04.Linux-ubuntu22-x86_64-gcc11.3/bin/thisroot.sh
+source /home/gianluca/root/bin/thisroot.sh
+
+# Texlive
+export PATH="/usr/local/texlive/2024/bin/x86_64-linux:$PATH"
+export MANPATH="/usr/bin/local/texlive/2024/texmf-dist/doc/man:$MANPATH"
+export INFOPATH="/usr/bin/local/texlive/2024/texmf-dist/doc/info:$INFOPATH"
